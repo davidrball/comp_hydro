@@ -1,0 +1,5 @@
+A few things to succesfully to execute mpiexec:
+  1. need to include the -host localhost to specify where the sshing is that spawns off jobs to different cores
+  2. need to use python3, for some reason the alias isn't working in this command to send python -> python3
+
+mpiexec -n 1 -host localhost python3 MPI_1d_advec.py
